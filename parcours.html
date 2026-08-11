@@ -62,7 +62,7 @@
         }
 
         .hero p {
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
             color: #526174;
             font-size: 17px;
@@ -73,16 +73,22 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: auto;
         }
 
         .section-title {
             color: #0b1f3a;
             font-size: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             border-bottom: 2px solid #e1e6ed;
             padding-bottom: 10px;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin-bottom: 40px;
+            color: #526174;
         }
 
         .block {
@@ -97,7 +103,7 @@
 
         .block h4 {
             color: #526174;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             font-weight: normal;
         }
 
@@ -111,28 +117,45 @@
             color: #526174;
         }
 
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
-        }
-
         .project {
-            padding: 25px;
+            margin-bottom: 32px;
+            padding: 25px 28px;
             background: #f7f9fc;
-            border: 1px solid #e1e6ed;
-            border-radius: 8px;
+            border-left: 4px solid #0b1f3a;
+            border-radius: 5px;
         }
 
         .project h3 {
             color: #0b1f3a;
-            margin-bottom: 12px;
-            font-size: 19px;
+            font-size: 20px;
+            margin-bottom: 14px;
         }
 
         .project p {
             color: #526174;
-            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .project strong {
+            color: #172033;
+        }
+
+        .tools {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .tools span {
+            display: inline-block;
+            background: #e9eef5;
+            color: #0b1f3a;
+            padding: 4px 9px;
+            margin: 3px;
+            border-radius: 4px;
+        }
+
+        .grey {
+            background: #f4f7fb;
         }
 
         .skills {
@@ -144,13 +167,9 @@
         .skill {
             background: #0b1f3a;
             color: white;
-            padding: 9px 15px;
-            border-radius: 20px;
+            padding: 8px 14px;
+            border-radius: 18px;
             font-size: 14px;
-        }
-
-        .pedagogy {
-            background: #f4f7fb;
         }
 
         .contact {
@@ -161,6 +180,10 @@
 
         .contact h2 {
             margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: white;
         }
 
         footer {
@@ -184,10 +207,6 @@
 
             .hero h1 {
                 font-size: 34px;
-            }
-
-            .project-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -221,9 +240,9 @@
     <h1>Parcours & Projets</h1>
 
     <p>
-        Formation, expérience professionnelle, pédagogie
-        et réalisations en mathématiques, statistiques,
-        Data et actuariat.
+        Formation, expérience professionnelle, expérience pédagogique
+        et projets réalisés en mathématiques, modélisation,
+        statistiques, Data et actuariat.
     </p>
 
 </section>
@@ -240,8 +259,7 @@
         <div class="block">
 
             <h3>
-                Master 2 en Ingénierie Mathématiques
-                et Sciences Actuarielles
+                Master 2 en Ingénierie Mathématiques et Sciences Actuarielles
             </h3>
 
             <h4>
@@ -250,8 +268,8 @@
 
             <p>
                 Formation spécialisée en mathématiques appliquées,
-                statistiques, modélisation quantitative, gestion
-                des risques et actuariat.
+                probabilités, statistiques, modélisation quantitative,
+                actuariat et gestion des risques.
             </p>
 
         </div>
@@ -265,8 +283,8 @@
 
             <p>
                 Formation en mathématiques fondamentales et appliquées,
-                avec une base solide en probabilités, statistiques,
-                analyse et algèbre.
+                permettant de développer une base solide en analyse,
+                algèbre, probabilités et statistiques.
             </p>
 
         </div>
@@ -276,7 +294,7 @@
 </section>
 
 
-<section class="pedagogy">
+<section class="grey">
 
     <div class="container">
 
@@ -295,8 +313,8 @@
             </h4>
 
             <p>
-                Expérience professionnelle dans l'analyse statistique
-                et actuarielle de portefeuilles d'assurance.
+                Expérience professionnelle portant sur l'analyse
+                statistique et actuarielle de portefeuilles d'assurance.
             </p>
 
             <ul>
@@ -315,20 +333,27 @@
                 </li>
 
                 <li>
-                    Développement de programmes SAS permettant
-                    d'automatiser la calibration et l'ajustement
-                    de règles d'acquisition.
+                    Développement de programmes SAS pour automatiser
+                    la calibration et l'ajustement des règles
+                    d'acquisition.
                 </li>
 
                 <li>
-                    Analyse de méthodes de provisionnement
-                    non-vie.
+                    Analyse de méthodes de provisionnement non-vie.
                 </li>
 
                 <li>
-                    Études sur des portefeuilles en run-off.
+                    Analyse de portefeuilles en run-off.
                 </li>
             </ul>
+
+            <div class="tools">
+                <span>SAS</span>
+                <span>Statistiques</span>
+                <span>Actuariat</span>
+                <span>Assurance</span>
+                <span>Provisionnement</span>
+            </div>
 
         </div>
 
@@ -348,38 +373,137 @@
         <div class="block">
 
             <h3>
-                Cours particuliers et remise à niveau
-                en mathématiques
+                Cours particuliers et remise à niveau en mathématiques
             </h3>
 
             <p>
-                Accompagnement personnalisé d'élèves du secondaire
-                dans le cadre de cours particuliers et de séances
-                de remise à niveau.
+                Dispensation de cours particuliers de mathématiques
+                et de séances de remise à niveau destinés notamment
+                aux élèves du secondaire.
+            </p>
+
+            <p>
+                L'accompagnement repose sur l'identification des
+                difficultés de l'apprenant, la reprise des notions
+                fondamentales et la mise en place d'exercices
+                progressifs adaptés à son niveau.
             </p>
 
             <ul>
-                <li>
-                    Identification des difficultés de l'apprenant.
-                </li>
-
-                <li>
-                    Reprise des notions fondamentales.
-                </li>
-
-                <li>
-                    Exercices progressifs adaptés au niveau.
-                </li>
-
-                <li>
-                    Préparation aux contrôles et examens.
-                </li>
-
-                <li>
-                    Adaptation de la méthode pédagogique
-                    aux besoins de l'élève.
-                </li>
+                <li>Remise à niveau en mathématiques.</li>
+                <li>Accompagnement individualisé.</li>
+                <li>Préparation aux contrôles et examens.</li>
+                <li>Explication et consolidation des notions du programme.</li>
+                <li>Adaptation de la pédagogie au niveau de l'apprenant.</li>
             </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="grey">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Projets — Mathématiques & Modélisation
+        </h2>
+
+        <p class="intro">
+            Ces projets illustrent l'utilisation des mathématiques
+            pour représenter, analyser et résoudre des problèmes
+            concrets.
+        </p>
+
+
+        <div class="project">
+
+            <h3>
+                Étude et représentation des courbes de Bézier
+                et leurs applications
+            </h3>
+
+            <p>
+                <strong>Problématique :</strong>
+                étudier la construction et les propriétés des courbes
+                de Bézier et comprendre leur utilisation pour représenter
+                des formes et des trajectoires.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude mathématique des courbes, représentation graphique
+                et analyse de leurs propriétés ainsi que de leurs
+                applications.
+            </p>
+
+            <div class="tools">
+                <span>Mathématiques</span>
+                <span>Modélisation</span>
+                <span>Représentation graphique</span>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Étude de la propagation d'un virus —
+                modèle épidémiologique SIR
+            </h3>
+
+            <p>
+                <strong>Problématique :</strong>
+                représenter mathématiquement la propagation d'une
+                épidémie au sein d'une population.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude du modèle SIR permettant de suivre l'évolution
+                des populations susceptibles, infectées et retirées,
+                ainsi que l'influence des paramètres du modèle sur
+                la dynamique de l'épidémie.
+            </p>
+
+            <div class="tools">
+                <span>Modélisation mathématique</span>
+                <span>Équations différentielles</span>
+                <span>Modèle SIR</span>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Programmation du jeu de Taquin
+            </h3>
+
+            <p>
+                <strong>Problématique :</strong>
+                concevoir une représentation informatique du jeu
+                de Taquin et permettre la manipulation et la résolution
+                des différentes configurations.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                conception de la logique du jeu, représentation
+                des états, gestion des déplacements et développement
+                des mécanismes nécessaires au fonctionnement du jeu.
+            </p>
+
+            <div class="tools">
+                <span>Programmation</span>
+                <span>Algorithmique</span>
+                <span>Structures de données</span>
+            </div>
 
         </div>
 
@@ -393,53 +517,190 @@
     <div class="container">
 
         <h2 class="section-title">
-            Projets mathématiques et programmation
+            Projets — Statistiques & Data
         </h2>
 
-        <div class="project-grid">
+        <p class="intro">
+            Ces travaux portent sur la préparation des données,
+            la modélisation statistique, l'analyse prédictive et
+            l'interprétation des résultats.
+        </p>
 
-            <div class="project">
 
-                <h3>
-                    Courbes de Bézier
-                </h3>
+        <div class="project">
 
-                <p>
-                    Étude et représentation des courbes de Bézier,
-                    de leurs propriétés mathématiques et de leurs
-                    différentes applications.
-                </p>
+            <h3>
+                Tarification automobile
+            </h3>
 
+            <p>
+                <strong>Problématique :</strong>
+                estimer le niveau de risque associé aux contrats
+                automobiles afin de construire une tarification
+                adaptée.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                analyse des données de contrats et de sinistres,
+                modélisation de la fréquence et du coût des sinistres,
+                sélection des variables explicatives et construction
+                d'une prime adaptée au profil de risque.
+            </p>
+
+            <div class="tools">
+                <span>GLM</span>
+                <span>Poisson</span>
+                <span>Tweedie</span>
+                <span>R</span>
+                <span>Python</span>
             </div>
 
+        </div>
 
-            <div class="project">
 
-                <h3>
-                    Modèle épidémiologique SIR
-                </h3>
+        <div class="project">
 
-                <p>
-                    Étude de la propagation d'un virus à partir
-                    du modèle SIR et analyse de l'évolution des
-                    populations susceptibles, infectées et retirées.
-                </p>
+            <h3>
+                Modélisation des montants de sinistres avec une loi Tweedie
+            </h3>
 
+            <p>
+                <strong>Problématique :</strong>
+                modéliser une variable de coût caractérisée par
+                une forte asymétrie et par la présence de nombreuses
+                valeurs nulles.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                transformation et préparation des données,
+                construction d'un modèle Tweedie, estimation des
+                paramètres et interprétation des facteurs expliquant
+                le montant des sinistres.
+            </p>
+
+            <div class="tools">
+                <span>Tweedie</span>
+                <span>GLM</span>
+                <span>Modélisation</span>
+                <span>R</span>
             </div>
 
+        </div>
 
-            <div class="project">
 
-                <h3>
-                    Programmation du jeu de Taquin
-                </h3>
+        <div class="project">
 
-                <p>
-                    Conception et programmation du jeu de Taquin,
-                    avec mise en œuvre d'algorithmes et de structures
-                    de données adaptés au problème.
-                </p>
+            <h3>
+                Analyse de données télématiques automobiles
+            </h3>
 
+            <p>
+                <strong>Problématique :</strong>
+                identifier les variables susceptibles d'expliquer
+                le comportement et le risque des conducteurs.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                nettoyage des données, création et transformation
+                de variables, analyse exploratoire et préparation
+                des données pour la modélisation statistique.
+            </p>
+
+            <div class="tools">
+                <span>Data cleaning</span>
+                <span>Feature engineering</span>
+                <span>Statistiques</span>
+                <span>R</span>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Analyse de données climatiques
+            </h3>
+
+            <p>
+                <strong>Problématique :</strong>
+                exploiter des données météorologiques afin
+                d'identifier des tendances et relations statistiques.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                préparation des données, analyse exploratoire,
+                représentation graphique et étude statistique
+                des variables climatiques.
+            </p>
+
+            <div class="tools">
+                <span>Data analysis</span>
+                <span>Statistiques</span>
+                <span>R</span>
+                <span>Visualisation</span>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Modélisation statistique et sélection de variables
+            </h3>
+
+            <p>
+                <strong>Problématique :</strong>
+                construire des modèles statistiques permettant
+                d'expliquer ou de prévoir une variable cible à
+                partir de plusieurs variables explicatives.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                mise en œuvre de modèles linéaires généralisés,
+                méthodes de régularisation et méthodes de réduction
+                dimensionnelle.
+            </p>
+
+            <div class="tools">
+                <span>GLM</span>
+                <span>Lasso</span>
+                <span>PCA</span>
+                <span>Machine Learning</span>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Modélisation des séries temporelles
+            </h3>
+
+            <p>
+                <strong>Problématique :</strong>
+                analyser la dynamique temporelle d'une variable
+                et produire des modèles adaptés à la prévision.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude des modèles ARMA et ARIMA, analyse de la
+                dépendance temporelle et utilisation de modèles
+                de séries temporelles pour la prévision.
+            </p>
+
+            <div class="tools">
+                <span>ARMA</span>
+                <span>ARIMA</span>
+                <span>Séries temporelles</span>
             </div>
 
         </div>
@@ -449,132 +710,131 @@
 </section>
 
 
-<section class="pedagogy">
+<section class="grey">
 
     <div class="container">
 
         <h2 class="section-title">
-            Projets statistiques, Data et actuariat
+            Projets — Actuariat & Gestion des risques
         </h2>
 
-        <div class="project-grid">
+        <p class="intro">
+            Ces projets portent sur l'évaluation des risques,
+            le provisionnement et les problématiques quantitatives
+            propres au secteur de l'assurance.
+        </p>
 
-            <div class="project">
 
-                <h3>
-                    Tarification automobile
-                </h3>
+        <div class="project">
 
-                <p>
-                    Modélisation de la fréquence et du coût des
-                    sinistres automobiles à l'aide de méthodes
-                    statistiques et de modèles linéaires généralisés.
-                </p>
+            <h3>
+                Provisionnement non-vie
+            </h3>
 
+            <p>
+                <strong>Problématique :</strong>
+                estimer les engagements futurs d'un assureur
+                à partir des historiques de sinistres.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude et application de plusieurs méthodes de
+                provisionnement, notamment Chain Ladder,
+                Bornhuetter-Ferguson et London Chain Ladder,
+                puis analyse comparative des résultats.
+            </p>
+
+            <div class="tools">
+                <span>Chain Ladder</span>
+                <span>Bornhuetter-Ferguson</span>
+                <span>London Chain Ladder</span>
+                <span>Actuariat</span>
             </div>
 
+        </div>
 
-            <div class="project">
 
-                <h3>
-                    Modélisation Tweedie
-                </h3>
+        <div class="project">
 
-                <p>
-                    Modélisation des montants de sinistres présentant
-                    une forte asymétrie et une proportion importante
-                    de valeurs nulles.
-                </p>
+            <h3>
+                IFRS 17
+            </h3>
 
+            <p>
+                <strong>Problématique :</strong>
+                comprendre et mettre en œuvre les principaux
+                mécanismes de valorisation des contrats d'assurance
+                dans le cadre de la norme IFRS 17.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude du Best Estimate, du Risk Adjustment,
+                des principes de valorisation et des mécanismes
+                de reconnaissance des résultats.
+            </p>
+
+            <div class="tools">
+                <span>IFRS 17</span>
+                <span>Best Estimate</span>
+                <span>Risk Adjustment</span>
+                <span>Assurance</span>
             </div>
 
+        </div>
 
-            <div class="project">
 
-                <h3>
-                    Provisionnement non-vie
-                </h3>
+        <div class="project">
 
-                <p>
-                    Étude et application de méthodes de provisionnement
-                    telles que Chain Ladder, Bornhuetter-Ferguson
-                    et London Chain Ladder.
-                </p>
+            <h3>
+                Solvabilité II et calcul du risque
+            </h3>
 
+            <p>
+                <strong>Problématique :</strong>
+                analyser les exigences quantitatives liées
+                à la solvabilité des organismes d'assurance.
+            </p>
+
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude du SCR, de la marge de risque et de
+                l'approche par le coût du capital.
+            </p>
+
+            <div class="tools">
+                <span>Solvabilité II</span>
+                <span>SCR</span>
+                <span>Risk Management</span>
             </div>
 
-
-            <div class="project">
-
-                <h3>
-                    Analyse de données climatiques
-                </h3>
-
-                <p>
-                    Traitement et analyse de données météorologiques
-                    afin d'étudier des relations et tendances
-                    statistiques.
-                </p>
-
-            </div>
+        </div>
 
 
-            <div class="project">
+        <div class="project">
 
-                <h3>
-                    Données télématiques automobiles
-                </h3>
+            <h3>
+                Value-at-Risk
+            </h3>
 
-                <p>
-                    Préparation des données, création de variables
-                    et analyse statistique de facteurs liés au risque
-                    automobile.
-                </p>
+            <p>
+                <strong>Problématique :</strong>
+                mesurer le risque de perte associé à un portefeuille
+                ou à une exposition financière sur un horizon donné.
+            </p>
 
-            </div>
+            <p>
+                <strong>Travail réalisé :</strong>
+                étude des méthodes de calcul de la Value-at-Risk,
+                analyse des hypothèses et interprétation des mesures
+                de risque.
+            </p>
 
-
-            <div class="project">
-
-                <h3>
-                    Analyse des risques
-                </h3>
-
-                <p>
-                    Travaux sur la Value-at-Risk, le SCR et différents
-                    indicateurs de mesure et de gestion des risques.
-                </p>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>
-                    IFRS 17 et Solvabilité II
-                </h3>
-
-                <p>
-                    Études portant notamment sur le Best Estimate,
-                    le Risk Adjustment, la marge de risque et
-                    le coût du capital.
-                </p>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>
-                    Modélisation statistique
-                </h3>
-
-                <p>
-                    Mise en œuvre de méthodes telles que GLM,
-                    Lasso, PCA, ARMA et ARIMA dans différents
-                    contextes d'analyse de données.
-                </p>
-
+            <div class="tools">
+                <span>VaR</span>
+                <span>Gestion des risques</span>
+                <span>Statistiques</span>
             </div>
 
         </div>
@@ -607,9 +867,8 @@
             <span class="skill">ARMA / ARIMA</span>
             <span class="skill">Lasso</span>
             <span class="skill">PCA</span>
-            <span class="skill">Solvabilité II</span>
             <span class="skill">IFRS 17</span>
-
+            <span class="skill">Solvabilité II</span>
         </div>
 
     </div>
@@ -625,6 +884,12 @@
 
     <p>
         Mathématiques · Statistiques · Data · Actuariat
+    </p>
+
+    <p>
+        <a href="mailto:gjanalytics.git@gmail.com">
+            gjanalytics.git@gmail.com
+        </a>
     </p>
 
 </section>
