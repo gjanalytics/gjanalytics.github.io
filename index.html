@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GJ Analytics | Mathématiques, Statistiques, Data & Actuariat</title>
-
-    <meta name="description"
-          content="GJ Analytics propose des prestations en mathématiques, statistiques, analyse de données, formation numérique et actuariat.">
+    <title>GJ Analytics | Mathématiques · Data · Statistiques · Actuariat</title>
 
     <style>
         * {
@@ -44,7 +41,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
+            margin-left: 22px;
             font-size: 15px;
         }
 
@@ -55,118 +52,132 @@
         .hero {
             background: #f4f7fb;
             padding: 90px 8%;
+        }
+
+        .hero-content {
+            max-width: 950px;
+            margin: auto;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 48px;
-            margin-bottom: 15px;
             color: #0b1f3a;
+            margin-bottom: 20px;
         }
 
         .hero h2 {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: normal;
-            color: #40516b;
+            color: #526174;
             margin-bottom: 25px;
         }
 
         .hero p {
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
-            font-size: 17px;
             color: #526174;
+            font-size: 17px;
+        }
+
+        .buttons {
+            margin-top: 30px;
         }
 
         .button {
             display: inline-block;
-            margin-top: 30px;
             padding: 13px 25px;
+            margin: 5px;
             background: #0b1f3a;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
 
-        .button:hover {
-            background: #173c6d;
+        .button.secondary {
+            background: white;
+            color: #0b1f3a;
+            border: 1px solid #0b1f3a;
         }
 
         section {
-            padding: 70px 8%;
+            padding: 65px 8%;
         }
 
-        section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: #0b1f3a;
-        }
-
-        .intro {
-            max-width: 850px;
+        .container {
+            max-width: 1050px;
             margin: auto;
+        }
+
+        .section-title {
             text-align: center;
-            color: #526174;
+            font-size: 30px;
+            color: #0b1f3a;
+            margin-bottom: 40px;
         }
 
         .services {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 18px;
         }
 
-        .card {
-            padding: 28px;
+        .service {
+            padding: 25px;
             background: #f7f9fc;
-            border: 1px solid #e3e8ef;
+            border: 1px solid #e1e6ed;
             border-radius: 8px;
         }
 
-        .card h3 {
+        .service h3 {
             color: #0b1f3a;
             margin-bottom: 12px;
         }
 
-        .card p {
-            color: #596779;
+        .service p {
+            color: #526174;
             font-size: 15px;
         }
 
-        .advantages {
+        .positioning {
             background: #f4f7fb;
         }
 
-        .advantages ul {
-            max-width: 750px;
+        .positioning-content {
+            max-width: 850px;
             margin: auto;
-            list-style: none;
+            text-align: center;
         }
 
-        .advantages li {
+        .positioning p {
+            color: #526174;
+            margin-bottom: 15px;
+        }
+
+        .numbers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .number {
             background: white;
-            margin-bottom: 12px;
-            padding: 15px 20px;
-            border-left: 4px solid #0b1f3a;
+            padding: 25px;
+            border: 1px solid #e1e6ed;
+            border-radius: 8px;
         }
 
-        .pricing-table {
-            width: 100%;
-            max-width: 800px;
-            margin: auto;
-            border-collapse: collapse;
+        .number strong {
+            display: block;
+            font-size: 27px;
+            color: #0b1f3a;
+            margin-bottom: 8px;
         }
 
-        .pricing-table th,
-        .pricing-table td {
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-
-        .pricing-table th {
-            background: #0b1f3a;
-            color: white;
+        .number span {
+            color: #526174;
+            font-size: 14px;
         }
 
         .contact {
@@ -176,11 +187,12 @@
         }
 
         .contact h2 {
-            color: white;
+            margin-bottom: 12px;
         }
 
-        .contact p {
-            margin: 8px 0;
+        .contact a {
+            color: white;
+            text-decoration: underline;
         }
 
         footer {
@@ -191,32 +203,35 @@
             font-size: 13px;
         }
 
-        @media (max-width: 900px) {
-            .services {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+        @media (max-width: 850px) {
 
-        @media (max-width: 600px) {
             nav {
                 flex-direction: column;
                 gap: 15px;
             }
 
             nav a {
-                margin: 0 8px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
+                margin: 0 7px;
             }
 
             .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .services,
+            .numbers {
                 grid-template-columns: 1fr;
             }
 
-            section {
-                padding: 50px 6%;
+            .hero h1 {
+                font-size: 34px;
             }
         }
     </style>
@@ -224,79 +239,55 @@
 
 <body>
 
+
 <header>
+
     <nav>
-        <div class="logo">GJ Analytics</div>
+
+        <div class="logo">
+            GJ Analytics
+        </div>
 
         <div>
-            <a href="#accueil">Accueil</a>
-            <a href="#prestations">Prestations</a>
-            <a href="#apropos">À propos</a>
-            <a href="#tarifs">Tarifs</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Accueil</a>
+            <a href="prestations.html">Prestations</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="contact.html">Contact</a>
         </div>
+
     </nav>
+
 </header>
 
 
-<section class="hero" id="accueil">
+<section class="hero">
 
-    <h1>GJ Analytics</h1>
+    <div class="hero-content">
 
-    <h2>
-        Mathématiques · Statistiques · Data · Actuariat
-    </h2>
+        <h1>GJ Analytics</h1>
 
-    <p>
-        Prestations de conseil, d'analyse, de formation et
-        d'accompagnement dans les domaines des mathématiques
-        appliquées, des statistiques et de l'analyse de données.
-    </p>
+        <h2>
+            Mathématiques · Statistiques · Data · Actuariat
+        </h2>
 
-    <a href="#prestations" class="button">
-        Découvrir les prestations
-    </a>
+        <p>
+            Prestations indépendantes d'analyse, de modélisation,
+            de formation et d'accompagnement dans les domaines
+            des mathématiques appliquées, des statistiques,
+            de la Data et de l'actuariat.
+        </p>
 
-</section>
+        <div class="buttons">
 
+            <a class="button" href="prestations.html">
+                Découvrir les prestations
+            </a>
 
-<section id="prestations">
+            <a class="button secondary" href="contact.html">
+                Me contacter
+            </a>
 
-    <h2>Nos prestations</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>Mathématiques</h3>
-            <p>
-                Cours particuliers, remise à niveau,
-                préparation aux examens et accompagnement
-                personnalisé.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Formation</h3>
-            <p>
-                Formations courtes en Excel, Python,
-                statistiques et outils d'analyse de données.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Data & Statistiques</h3>
-            <p>
-                Analyse de données, traitement statistique,
-                automatisation et production d'indicateurs.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Actuariat</h3>
-            <p>
-                Prestations statistiques et quantitatives
-                appliquées à l'assurance et à la gestion des risques.
-            </p>
         </div>
 
     </div>
@@ -304,115 +295,192 @@
 </section>
 
 
-<section class="advantages">
+<section>
 
-    <h2>Pourquoi GJ Analytics ?</h2>
+    <div class="container">
 
-    <ul>
-        <li>
-            Formation spécialisée en mathématiques appliquées
-            et sciences actuarielles.
-        </li>
+        <h2 class="section-title">
+            Nos prestations
+        </h2>
 
-        <li>
-            Expérience professionnelle dans le secteur de l'assurance.
-        </li>
+        <div class="services">
 
-        <li>
-            Compétences en Python, R, SQL, Excel et statistiques.
-        </li>
+            <div class="service">
 
-        <li>
-            Prestations adaptées aux besoins des particuliers,
-            étudiants et entreprises.
-        </li>
+                <h3>
+                    Mathématiques
+                </h3>
 
-        <li>
-            Tarifs de lancement compétitifs pour faciliter
-            les premières collaborations.
-        </li>
-    </ul>
+                <p>
+                    Cours particuliers et remise à niveau
+                    adaptés au niveau et aux objectifs
+                    de chaque apprenant.
+                </p>
 
-</section>
+            </div>
 
 
-<section id="apropos">
+            <div class="service">
 
-    <h2>À propos</h2>
+                <h3>
+                    Formation Data
+                </h3>
 
-    <p class="intro">
-        GJ Analytics est une activité indépendante spécialisée
-        dans les mathématiques appliquées, les statistiques,
-        l'analyse de données et l'actuariat.
+                <p>
+                    Formation pratique aux outils numériques :
+                    Excel, Python et statistiques.
+                </p>
 
-        <br><br>
-
-        L'activité s'appuie sur une formation de niveau Master 2
-        en Ingénierie Mathématiques et Sciences Actuarielles
-        ainsi que sur une expérience professionnelle dans
-        le domaine de l'assurance.
-    </p>
-
-</section>
+            </div>
 
 
-<section id="tarifs">
+            <div class="service">
 
-    <h2>Tarifs de lancement</h2>
+                <h3>
+                    Analyse Data
+                </h3>
 
-    <table class="pricing-table">
+                <p>
+                    Analyse statistique, traitement de données,
+                    modélisation et production de résultats
+                    exploitables.
+                </p>
 
-        <tr>
-            <th>Prestation</th>
-            <th>Tarif</th>
-        </tr>
+            </div>
 
-        <tr>
-            <td>Cours particuliers en mathématiques</td>
-            <td>25 €/heure</td>
-        </tr>
 
-        <tr>
-            <td>Formation Excel, Python, statistiques</td>
-            <td>200 €/jour</td>
-        </tr>
+            <div class="service">
 
-        <tr>
-            <td>Analyse statistique / Data</td>
-            <td>300 €/jour</td>
-        </tr>
+                <h3>
+                    Statistiques & Actuariat
+                </h3>
 
-        <tr>
-            <td>Conseil statistiques / actuariat</td>
-            <td>300 €/jour</td>
-        </tr>
+                <p>
+                    Prestations de conseil et d'analyse
+                    pour les problématiques statistiques,
+                    quantitatives et actuarielles.
+                </p>
 
-    </table>
+            </div>
 
-    <p class="intro" style="margin-top:25px;">
-        Les tarifs indiqués correspondent au positionnement
-        de lancement de l'activité et pourront évoluer
-        progressivement en fonction du développement
-        de la clientèle et des prestations.
-    </p>
+        </div>
+
+    </div>
 
 </section>
 
 
-<section class="contact" id="contact">
+<section class="positioning">
 
-    <h2>Contact</h2>
+    <div class="positioning-content">
 
-    <p>
+        <h2 class="section-title">
+            Un profil à la croisée des disciplines quantitatives
+        </h2>
+
+        <p>
+            GJ Analytics s'appuie sur une formation spécialisée
+            en mathématiques appliquées et sciences actuarielles,
+            une expérience professionnelle dans l'assurance
+            et une pratique de la modélisation statistique
+            et de l'analyse de données.
+        </p>
+
+        <p>
+            L'objectif est de transformer les données et les
+            problématiques quantitatives en analyses compréhensibles
+            et directement exploitables.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="numbers">
+
+            <div class="number">
+
+                <strong>Mathématiques</strong>
+
+                <span>
+                    Formation et expérience pédagogique
+                </span>
+
+            </div>
+
+
+            <div class="number">
+
+                <strong>Data & Statistiques</strong>
+
+                <span>
+                    Analyse, modélisation et traitement des données
+                </span>
+
+            </div>
+
+
+            <div class="number">
+
+                <strong>Actuariat</strong>
+
+                <span>
+                    Expérience professionnelle dans l'assurance
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Parcours et réalisations
+        </h2>
+
+        <div class="positioning-content">
+
+            <p>
+                Découvrez le parcours académique et professionnel,
+                ainsi qu'une sélection de projets réalisés en
+                mathématiques, programmation, statistiques,
+                Data et actuariat.
+            </p>
+
+            <div class="buttons">
+
+                <a class="button" href="parcours.html">
+                    Voir le parcours
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>
         GJ Analytics
-    </p>
+    </h2>
 
     <p>
-        Mathématiques · Statistiques · Data · Actuariat
-    </p>
-
-    <p>
-        Email : gjanalytics.git@gmail.com
+        Pour toute demande de prestation :
+        <a href="mailto:gjanalytics.git@gmail.com">
+            gjanalytics.git@gmail.com
+        </a>
     </p>
 
 </section>
@@ -423,6 +491,7 @@
     © 2026 GJ Analytics — Tous droits réservés.
 
 </footer>
+
 
 </body>
 </html>
