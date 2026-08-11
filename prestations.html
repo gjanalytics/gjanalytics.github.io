@@ -18,7 +18,7 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #172033;
             background: #ffffff;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
@@ -41,7 +41,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
+            margin-left: 22px;
             font-size: 15px;
         }
 
@@ -62,7 +62,7 @@
         }
 
         .hero p {
-            max-width: 750px;
+            max-width: 800px;
             margin: auto;
             color: #526174;
             font-size: 17px;
@@ -72,41 +72,84 @@
             padding: 60px 8%;
         }
 
-        .services {
-            max-width: 1000px;
+        .container {
+            max-width: 1050px;
             margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
         }
 
-        .card {
-            padding: 30px;
+        .section-title {
+            color: #0b1f3a;
+            font-size: 30px;
+            margin-bottom: 35px;
+            border-bottom: 2px solid #e1e6ed;
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            color: #526174;
+            max-width: 850px;
+            margin-bottom: 35px;
+        }
+
+        .offer {
+            background: #f7f9fc;
             border: 1px solid #e1e6ed;
             border-radius: 8px;
-            background: #f8fafc;
+            padding: 32px;
+            margin-bottom: 30px;
         }
 
-        .card h2 {
+        .offer h3 {
             color: #0b1f3a;
-            margin-bottom: 15px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        .card p {
+        .offer-subtitle {
+            color: #526174;
+            margin-bottom: 20px;
+        }
+
+        .offer p {
             color: #526174;
             margin-bottom: 15px;
         }
 
-        .card ul {
-            padding-left: 20px;
+        .offer ul {
             color: #526174;
+            padding-left: 22px;
+            margin-bottom: 20px;
         }
 
         .price {
-            margin-top: 20px;
+            display: inline-block;
+            background: #0b1f3a;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
             font-weight: bold;
-            color: #0b1f3a;
-            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .launch {
+            display: inline-block;
+            margin-left: 10px;
+            color: #526174;
+            font-size: 14px;
+        }
+
+        .grey {
+            background: #f4f7fb;
+        }
+
+        .positioning {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .positioning p {
+            color: #526174;
+            margin-bottom: 15px;
         }
 
         .contact {
@@ -116,7 +159,11 @@
         }
 
         .contact h2 {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: white;
         }
 
         footer {
@@ -127,7 +174,7 @@
             font-size: 13px;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
 
             nav {
                 flex-direction: column;
@@ -135,15 +182,15 @@
             }
 
             nav a {
-                margin: 0 8px;
-            }
-
-            .services {
-                grid-template-columns: 1fr;
+                margin: 0 7px;
             }
 
             .hero h1 {
                 font-size: 34px;
+            }
+
+            .offer {
+                padding: 24px;
             }
         }
     </style>
@@ -162,7 +209,7 @@
         <div>
             <a href="index.html">Accueil</a>
             <a href="prestations.html">Prestations</a>
-            <a href="a-propos.html">À propos</a>
+            <a href="parcours.html">Parcours</a>
             <a href="tarifs.html">Tarifs</a>
             <a href="contact.html">Contact</a>
         </div>
@@ -174,12 +221,13 @@
 
 <section class="hero">
 
-    <h1>Nos prestations</h1>
+    <h1>Prestations</h1>
 
     <p>
-        GJ Analytics propose des prestations adaptées
-        aux particuliers, étudiants, entreprises et
-        organismes de formation.
+        Des prestations adaptées aux besoins des particuliers,
+        étudiants, indépendants et petites entreprises dans les
+        domaines des mathématiques, de la Data, des statistiques
+        et de l'actuariat.
     </p>
 
 </section>
@@ -187,98 +235,221 @@
 
 <section>
 
-    <div class="services">
+    <div class="container">
 
-        <div class="card">
+        <h2 class="section-title">
+            Nos domaines d'intervention
+        </h2>
 
-            <h2>Mathématiques</h2>
+        <p class="intro">
+            Les prestations peuvent être réalisées sous forme
+            d'accompagnement ponctuel, de mission courte ou de
+            prestation personnalisée selon la nature du besoin.
+        </p>
+
+
+        <div class="offer">
+
+            <h3>
+                01 — Cours particuliers en mathématiques
+            </h3>
+
+            <div class="offer-subtitle">
+                Accompagnement individuel et remise à niveau
+            </div>
 
             <p>
-                Accompagnement personnalisé en mathématiques
-                pour les élèves et étudiants.
+                Cours adaptés au niveau de l'apprenant et à ses
+                objectifs scolaires.
             </p>
 
             <ul>
-                <li>Remise à niveau</li>
-                <li>Préparation aux examens</li>
-                <li>Préparation au baccalauréat</li>
-                <li>Accompagnement régulier</li>
+                <li>Remise à niveau en mathématiques.</li>
+                <li>Accompagnement des élèves du secondaire.</li>
+                <li>Reprise des notions mal maîtrisées.</li>
+                <li>Préparation aux contrôles et examens.</li>
+                <li>Exercices et entraînement personnalisés.</li>
+                <li>Suivi adapté aux difficultés de l'apprenant.</li>
             </ul>
 
-            <div class="price">
-                25 €/heure
-            </div>
+            <span class="price">
+                25 € / heure
+            </span>
 
         </div>
 
 
-        <div class="card">
+        <div class="offer">
 
-            <h2>Formation numérique</h2>
+            <h3>
+                02 — Formation aux outils numériques
+            </h3>
+
+            <div class="offer-subtitle">
+                Excel · Python · Statistiques
+            </div>
 
             <p>
-                Formations courtes et pratiques destinées
-                aux particuliers et aux professionnels.
+                Formation pratique destinée aux personnes souhaitant
+                développer leur autonomie dans l'utilisation des
+                outils numériques et statistiques.
             </p>
 
             <ul>
-                <li>Excel</li>
-                <li>Python</li>
-                <li>Statistiques</li>
-                <li>Initiation à l'analyse de données</li>
+                <li>Excel et traitement de données.</li>
+                <li>Formules et fonctions avancées.</li>
+                <li>Organisation et nettoyage de données.</li>
+                <li>Introduction à Python pour l'analyse de données.</li>
+                <li>Notions fondamentales de statistiques.</li>
+                <li>Manipulation et représentation de données.</li>
             </ul>
 
-            <div class="price">
-                200 €/jour
-            </div>
+            <span class="price">
+                200 € / jour
+            </span>
 
         </div>
 
 
-        <div class="card">
+        <div class="offer">
 
-            <h2>Analyse statistique & Data</h2>
+            <h3>
+                03 — Analyse statistique & Data
+            </h3>
+
+            <div class="offer-subtitle">
+                Analyse · Modélisation · Exploitation des données
+            </div>
 
             <p>
-                Analyse et traitement des données pour répondre
-                à des problématiques concrètes.
+                Accompagnement dans l'exploitation et l'analyse
+                de données pour produire des résultats directement
+                exploitables.
             </p>
 
             <ul>
-                <li>Nettoyage des données</li>
-                <li>Analyse statistique</li>
-                <li>Visualisation</li>
-                <li>Tableaux de bord</li>
-                <li>Automatisation de traitements</li>
+                <li>Nettoyage et préparation des données.</li>
+                <li>Analyse exploratoire des données.</li>
+                <li>Statistiques descriptives.</li>
+                <li>Visualisation des données.</li>
+                <li>Modélisation statistique.</li>
+                <li>Régression et modèles linéaires généralisés.</li>
+                <li>Sélection et transformation de variables.</li>
+                <li>Interprétation et présentation des résultats.</li>
             </ul>
 
-            <div class="price">
-                300 €/jour
-            </div>
+            <span class="price">
+                300 € / jour
+            </span>
+
+            <span class="launch">
+                Tarif de lancement
+            </span>
 
         </div>
 
 
-        <div class="card">
+        <div class="offer">
 
-            <h2>Statistiques & Actuariat</h2>
+            <h3>
+                04 — Conseil statistiques & actuariat
+            </h3>
+
+            <div class="offer-subtitle">
+                Statistiques · Risques · Assurance · Actuariat
+            </div>
 
             <p>
-                Prestations quantitatives destinées notamment
-                aux secteurs de l'assurance et de la finance.
+                Intervention sur des problématiques quantitatives
+                nécessitant une expertise en statistiques appliquées,
+                modélisation ou actuariat.
             </p>
 
             <ul>
-                <li>Études statistiques</li>
-                <li>Analyse de risques</li>
-                <li>Analyse de sinistralité</li>
-                <li>Modélisation quantitative</li>
-                <li>Assistance actuarielle</li>
+                <li>Analyse statistique de portefeuilles.</li>
+                <li>Analyse et modélisation du risque.</li>
+                <li>Tarification et analyse de sinistralité.</li>
+                <li>Provisionnement non-vie.</li>
+                <li>Analyse de données d'assurance.</li>
+                <li>Modélisation actuarielle.</li>
+                <li>Études quantitatives ponctuelles.</li>
+                <li>Automatisation de traitements statistiques.</li>
             </ul>
 
-            <div class="price">
-                300 €/jour
-            </div>
+            <span class="price">
+                300 € / jour
+            </span>
+
+            <span class="launch">
+                Tarif de lancement
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="grey">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Une tarification volontairement accessible au lancement
+        </h2>
+
+        <div class="positioning">
+
+            <p>
+                Les prestations d'analyse statistique, de Data et de
+                conseil actuariel sont proposées initialement à
+                <strong>300 € par jour</strong>.
+            </p>
+
+            <p>
+                Ce positionnement constitue un tarif de lancement,
+                volontairement inférieur aux niveaux de rémunération
+                généralement observés pour des prestations de conseil
+                spécialisées, afin de faciliter l'accès aux premiers
+                clients et de développer progressivement un portefeuille
+                de missions.
+            </p>
+
+            <p>
+                Le tarif pourra évoluer en fonction de la complexité
+                des missions, du niveau d'expertise requis, de leur durée
+                et des responsabilités associées.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Des prestations adaptées à la mission
+        </h2>
+
+        <div class="positioning">
+
+            <p>
+                Une mission peut être définie selon son périmètre,
+                sa durée et les livrables attendus.
+            </p>
+
+            <p>
+                Pour les besoins spécifiques, le contenu de la prestation
+                peut être adapté afin de tenir compte des données
+                disponibles, des objectifs du client et du niveau
+                d'accompagnement nécessaire.
+            </p>
 
         </div>
 
@@ -289,11 +460,18 @@
 
 <section class="contact">
 
-    <h2>Une prestation adaptée à votre besoin</h2>
+    <h2>
+        GJ Analytics
+    </h2>
 
     <p>
-        Contactez GJ Analytics pour présenter votre besoin
-        et définir le format de la prestation.
+        Mathématiques · Statistiques · Data · Actuariat
+    </p>
+
+    <p>
+        <a href="mailto:gjanalytics.git@gmail.com">
+            gjanalytics.git@gmail.com
+        </a>
     </p>
 
 </section>
