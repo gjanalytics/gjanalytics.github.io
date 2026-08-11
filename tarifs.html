@@ -1,0 +1,279 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tarifs | GJ Analytics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f4f7fb;
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #526174;
+            font-size: 17px;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .pricing {
+            max-width: 850px;
+            margin: auto;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 18px;
+            border-bottom: 1px solid #dfe4ea;
+            text-align: left;
+        }
+
+        th {
+            background: #0b1f3a;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f7f9fc;
+        }
+
+        .launch {
+            max-width: 850px;
+            margin: 40px auto 0;
+            padding: 30px;
+            background: #f4f7fb;
+            border-left: 4px solid #0b1f3a;
+        }
+
+        .launch h2 {
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .launch p {
+            color: #526174;
+            margin-bottom: 12px;
+        }
+
+        .contact {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #071426;
+            color: #b9c3d1;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            GJ Analytics
+        </div>
+
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="prestations.html">Prestations</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Tarifs</h1>
+
+    <p>
+        Des tarifs de lancement adaptés au développement
+        progressif de l'activité.
+    </p>
+
+</section>
+
+
+<section>
+
+    <div class="pricing">
+
+        <table>
+
+            <tr>
+                <th>Prestation</th>
+                <th>Tarif de lancement</th>
+                <th>Unité</th>
+            </tr>
+
+            <tr>
+                <td>Cours particuliers en mathématiques</td>
+                <td>25 €</td>
+                <td>Heure</td>
+            </tr>
+
+            <tr>
+                <td>Formation Excel, Python, statistiques</td>
+                <td>200 €</td>
+                <td>Jour</td>
+            </tr>
+
+            <tr>
+                <td>Analyse statistique / Data</td>
+                <td>300 €</td>
+                <td>Jour</td>
+            </tr>
+
+            <tr>
+                <td>Conseil statistiques / actuariat</td>
+                <td>300 €</td>
+                <td>Jour</td>
+            </tr>
+
+        </table>
+
+
+        <div class="launch">
+
+            <h2>Positionnement de lancement</h2>
+
+            <p>
+                Les tarifs des prestations professionnelles ont été
+                volontairement fixés à un niveau compétitif pour
+                faciliter l'entrée sur le marché et permettre
+                l'acquisition des premiers clients.
+            </p>
+
+            <p>
+                Cette stratégie vise notamment à permettre la
+                constitution progressive d'un portefeuille clients,
+                de références et de recommandations.
+            </p>
+
+            <p>
+                Les tarifs pourront être réévalués progressivement
+                en fonction de l'expérience acquise, de la complexité
+                des missions et de la fidélisation de la clientèle.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>GJ Analytics</h2>
+
+    <p>
+        Mathématiques · Statistiques · Data · Actuariat
+    </p>
+
+</section>
+
+
+<footer>
+
+    © 2026 GJ Analytics — Tous droits réservés.
+
+</footer>
+
+</body>
+</html>
+```
