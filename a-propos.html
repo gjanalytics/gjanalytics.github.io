@@ -1,0 +1,286 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>À propos | GJ Analytics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f4f7fb;
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #526174;
+            font-size: 17px;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .content h2 {
+            color: #0b1f3a;
+            margin-bottom: 15px;
+            margin-top: 35px;
+        }
+
+        .content p {
+            color: #526174;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #f7f9fc;
+            border: 1px solid #e1e6ed;
+            padding: 18px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #0b1f3a;
+        }
+
+        .contact {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #071426;
+            color: #b9c3d1;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            GJ Analytics
+        </div>
+
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="prestations.html">Prestations</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>À propos de GJ Analytics</h1>
+
+    <p>
+        Une activité indépendante spécialisée dans les
+        mathématiques appliquées, les statistiques,
+        l'analyse de données et l'actuariat.
+    </p>
+
+</section>
+
+
+<section>
+
+    <div class="content">
+
+        <h2>Le projet</h2>
+
+        <p>
+            GJ Analytics est une activité indépendante destinée
+            à proposer des prestations de conseil, d'analyse,
+            de formation et d'accompagnement dans les domaines
+            quantitatifs.
+        </p>
+
+        <p>
+            L'activité s'adresse aux particuliers, aux étudiants,
+            aux entreprises et aux organismes de formation.
+        </p>
+
+
+        <h2>Le parcours</h2>
+
+        <p>
+            Le projet est porté par Guillaume Junior Atsafack Ngoufack,
+            titulaire d'un Master 2 en Ingénierie Mathématiques
+            et Sciences Actuarielles obtenu à Aix-Marseille Université.
+        </p>
+
+        <p>
+            La formation suivie permet d'intervenir sur des
+            problématiques liées aux mathématiques appliquées,
+            aux statistiques, à l'analyse de données et à l'actuariat.
+        </p>
+
+        <p>
+            Une expérience professionnelle dans le secteur de
+            l'assurance a également permis de mettre en pratique
+            ces compétences sur des problématiques réelles.
+        </p>
+
+
+        <h2>Compétences</h2>
+
+        <div class="skills">
+
+            <div class="skill">Mathématiques</div>
+
+            <div class="skill">Statistiques</div>
+
+            <div class="skill">Actuariat</div>
+
+            <div class="skill">Python</div>
+
+            <div class="skill">R</div>
+
+            <div class="skill">SQL</div>
+
+            <div class="skill">Excel</div>
+
+            <div class="skill">VBA</div>
+
+            <div class="skill">Analyse de données</div>
+
+        </div>
+
+
+        <h2>Notre approche</h2>
+
+        <p>
+            L'objectif est de proposer des prestations accessibles,
+            pratiques et adaptées aux besoins réels du client.
+        </p>
+
+        <p>
+            Les tarifs de lancement sont volontairement compétitifs
+            afin de faciliter l'acquisition des premiers clients
+            et la constitution progressive de références professionnelles.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>GJ Analytics</h2>
+
+    <p>
+        Mathématiques · Statistiques · Data · Actuariat
+    </p>
+
+</section>
+
+
+<footer>
+
+    © 2026 GJ Analytics — Tous droits réservés.
+
+</footer>
+
+</body>
+</html>
+```
