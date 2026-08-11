@@ -1,0 +1,641 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parcours & Projets | GJ Analytics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f4f7fb;
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            color: #526174;
+            font-size: 17px;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section-title {
+            color: #0b1f3a;
+            font-size: 30px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e1e6ed;
+            padding-bottom: 10px;
+        }
+
+        .block {
+            margin-bottom: 45px;
+        }
+
+        .block h3 {
+            color: #0b1f3a;
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .block h4 {
+            color: #526174;
+            margin-bottom: 12px;
+            font-weight: normal;
+        }
+
+        .block p {
+            color: #526174;
+            margin-bottom: 12px;
+        }
+
+        .block ul {
+            padding-left: 22px;
+            color: #526174;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .project {
+            padding: 25px;
+            background: #f7f9fc;
+            border: 1px solid #e1e6ed;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            color: #0b1f3a;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+
+        .project p {
+            color: #526174;
+            font-size: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #0b1f3a;
+            color: white;
+            padding: 9px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .pedagogy {
+            background: #f4f7fb;
+        }
+
+        .contact {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #071426;
+            color: #b9c3d1;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            GJ Analytics
+        </div>
+
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="prestations.html">Prestations</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Parcours & Projets</h1>
+
+    <p>
+        Formation, expérience professionnelle, pédagogie
+        et réalisations en mathématiques, statistiques,
+        Data et actuariat.
+    </p>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Formation
+        </h2>
+
+        <div class="block">
+
+            <h3>
+                Master 2 en Ingénierie Mathématiques
+                et Sciences Actuarielles
+            </h3>
+
+            <h4>
+                Aix-Marseille Université
+            </h4>
+
+            <p>
+                Formation spécialisée en mathématiques appliquées,
+                statistiques, modélisation quantitative, gestion
+                des risques et actuariat.
+            </p>
+
+        </div>
+
+
+        <div class="block">
+
+            <h3>
+                Licence en Mathématiques
+            </h3>
+
+            <p>
+                Formation en mathématiques fondamentales et appliquées,
+                avec une base solide en probabilités, statistiques,
+                analyse et algèbre.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="pedagogy">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Expérience professionnelle
+        </h2>
+
+        <div class="block">
+
+            <h3>
+                Chargé d'études statistiques et actuarielles
+            </h3>
+
+            <h4>
+                AXA France — Assurance et actuariat
+            </h4>
+
+            <p>
+                Expérience professionnelle dans l'analyse statistique
+                et actuarielle de portefeuilles d'assurance.
+            </p>
+
+            <ul>
+                <li>
+                    Analyse et évaluation de la sinistralité
+                    des portefeuilles.
+                </li>
+
+                <li>
+                    Analyse et évaluation des provisions techniques.
+                </li>
+
+                <li>
+                    Étude des règles d'acquisition sur des contrats
+                    à prime unique.
+                </li>
+
+                <li>
+                    Développement de programmes SAS permettant
+                    d'automatiser la calibration et l'ajustement
+                    de règles d'acquisition.
+                </li>
+
+                <li>
+                    Analyse de méthodes de provisionnement
+                    non-vie.
+                </li>
+
+                <li>
+                    Études sur des portefeuilles en run-off.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Expérience pédagogique
+        </h2>
+
+        <div class="block">
+
+            <h3>
+                Cours particuliers et remise à niveau
+                en mathématiques
+            </h3>
+
+            <p>
+                Accompagnement personnalisé d'élèves du secondaire
+                dans le cadre de cours particuliers et de séances
+                de remise à niveau.
+            </p>
+
+            <ul>
+                <li>
+                    Identification des difficultés de l'apprenant.
+                </li>
+
+                <li>
+                    Reprise des notions fondamentales.
+                </li>
+
+                <li>
+                    Exercices progressifs adaptés au niveau.
+                </li>
+
+                <li>
+                    Préparation aux contrôles et examens.
+                </li>
+
+                <li>
+                    Adaptation de la méthode pédagogique
+                    aux besoins de l'élève.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Projets mathématiques et programmation
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project">
+
+                <h3>
+                    Courbes de Bézier
+                </h3>
+
+                <p>
+                    Étude et représentation des courbes de Bézier,
+                    de leurs propriétés mathématiques et de leurs
+                    différentes applications.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Modèle épidémiologique SIR
+                </h3>
+
+                <p>
+                    Étude de la propagation d'un virus à partir
+                    du modèle SIR et analyse de l'évolution des
+                    populations susceptibles, infectées et retirées.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Programmation du jeu de Taquin
+                </h3>
+
+                <p>
+                    Conception et programmation du jeu de Taquin,
+                    avec mise en œuvre d'algorithmes et de structures
+                    de données adaptés au problème.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="pedagogy">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Projets statistiques, Data et actuariat
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project">
+
+                <h3>
+                    Tarification automobile
+                </h3>
+
+                <p>
+                    Modélisation de la fréquence et du coût des
+                    sinistres automobiles à l'aide de méthodes
+                    statistiques et de modèles linéaires généralisés.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Modélisation Tweedie
+                </h3>
+
+                <p>
+                    Modélisation des montants de sinistres présentant
+                    une forte asymétrie et une proportion importante
+                    de valeurs nulles.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Provisionnement non-vie
+                </h3>
+
+                <p>
+                    Étude et application de méthodes de provisionnement
+                    telles que Chain Ladder, Bornhuetter-Ferguson
+                    et London Chain Ladder.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Analyse de données climatiques
+                </h3>
+
+                <p>
+                    Traitement et analyse de données météorologiques
+                    afin d'étudier des relations et tendances
+                    statistiques.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Données télématiques automobiles
+                </h3>
+
+                <p>
+                    Préparation des données, création de variables
+                    et analyse statistique de facteurs liés au risque
+                    automobile.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Analyse des risques
+                </h3>
+
+                <p>
+                    Travaux sur la Value-at-Risk, le SCR et différents
+                    indicateurs de mesure et de gestion des risques.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    IFRS 17 et Solvabilité II
+                </h3>
+
+                <p>
+                    Études portant notamment sur le Best Estimate,
+                    le Risk Adjustment, la marge de risque et
+                    le coût du capital.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    Modélisation statistique
+                </h3>
+
+                <p>
+                    Mise en œuvre de méthodes telles que GLM,
+                    Lasso, PCA, ARMA et ARIMA dans différents
+                    contextes d'analyse de données.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Compétences techniques
+        </h2>
+
+        <div class="skills">
+
+            <span class="skill">Python</span>
+            <span class="skill">R</span>
+            <span class="skill">SAS</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Excel</span>
+            <span class="skill">VBA</span>
+            <span class="skill">GLM</span>
+            <span class="skill">Tweedie</span>
+            <span class="skill">Chain Ladder</span>
+            <span class="skill">Bornhuetter-Ferguson</span>
+            <span class="skill">ARMA / ARIMA</span>
+            <span class="skill">Lasso</span>
+            <span class="skill">PCA</span>
+            <span class="skill">Solvabilité II</span>
+            <span class="skill">IFRS 17</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>
+        GJ Analytics
+    </h2>
+
+    <p>
+        Mathématiques · Statistiques · Data · Actuariat
+    </p>
+
+</section>
+
+
+<footer>
+
+    © 2026 GJ Analytics — Tous droits réservés.
+
+</footer>
+
+</body>
+</html>
+```
