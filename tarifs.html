@@ -18,7 +18,7 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #172033;
             background: #ffffff;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
@@ -41,7 +41,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
+            margin-left: 22px;
             font-size: 15px;
         }
 
@@ -62,7 +62,7 @@
         }
 
         .hero p {
-            max-width: 750px;
+            max-width: 800px;
             margin: auto;
             color: #526174;
             font-size: 17px;
@@ -72,49 +72,95 @@
             padding: 60px 8%;
         }
 
-        .pricing {
-            max-width: 850px;
+        .container {
+            max-width: 1050px;
             margin: auto;
-            overflow-x: auto;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-
-        th, td {
-            padding: 18px;
-            border-bottom: 1px solid #dfe4ea;
-            text-align: left;
-        }
-
-        th {
-            background: #0b1f3a;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background: #f7f9fc;
-        }
-
-        .launch {
-            max-width: 850px;
-            margin: 40px auto 0;
-            padding: 30px;
-            background: #f4f7fb;
-            border-left: 4px solid #0b1f3a;
-        }
-
-        .launch h2 {
+        .section-title {
             color: #0b1f3a;
+            font-size: 30px;
+            margin-bottom: 35px;
+            border-bottom: 2px solid #e1e6ed;
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            color: #526174;
+            max-width: 850px;
+            margin-bottom: 35px;
+        }
+
+        .tarifs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .tarif {
+            background: #f7f9fc;
+            border: 1px solid #e1e6ed;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .tarif h3 {
+            color: #0b1f3a;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .tarif .type {
+            color: #526174;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .montant {
+            color: #0b1f3a;
+            font-size: 25px;
+            font-weight: bold;
             margin-bottom: 15px;
         }
 
-        .launch p {
+        .tarif p {
             color: #526174;
-            margin-bottom: 12px;
+        }
+
+        .launch {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px 10px;
+            background: #e9eef5;
+            color: #0b1f3a;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .grey {
+            background: #f4f7fb;
+        }
+
+        .positioning {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .positioning p {
+            color: #526174;
+            margin-bottom: 15px;
+        }
+
+        .conditions {
+            margin-top: 30px;
+            padding: 25px;
+            background: #ffffff;
+            border-left: 4px solid #0b1f3a;
+        }
+
+        .conditions p {
+            color: #526174;
+            margin-bottom: 10px;
         }
 
         .contact {
@@ -124,7 +170,11 @@
         }
 
         .contact h2 {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: white;
         }
 
         footer {
@@ -135,7 +185,7 @@
             font-size: 13px;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
 
             nav {
                 flex-direction: column;
@@ -143,11 +193,15 @@
             }
 
             nav a {
-                margin: 0 8px;
+                margin: 0 7px;
             }
 
             .hero h1 {
                 font-size: 34px;
+            }
+
+            .tarifs {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -166,7 +220,7 @@
         <div>
             <a href="index.html">Accueil</a>
             <a href="prestations.html">Prestations</a>
-            <a href="a-propos.html">À propos</a>
+            <a href="parcours.html">Parcours</a>
             <a href="tarifs.html">Tarifs</a>
             <a href="contact.html">Contact</a>
         </div>
@@ -181,8 +235,8 @@
     <h1>Tarifs</h1>
 
     <p>
-        Des tarifs de lancement adaptés au développement
-        progressif de l'activité.
+        Des tarifs de départ adaptés à la nature et au niveau
+        de personnalisation des prestations.
     </p>
 
 </section>
@@ -190,65 +244,195 @@
 
 <section>
 
-    <div class="pricing">
+    <div class="container">
 
-        <table>
+        <h2 class="section-title">
+            Tarifs indicatifs
+        </h2>
 
-            <tr>
-                <th>Prestation</th>
-                <th>Tarif de lancement</th>
-                <th>Unité</th>
-            </tr>
-
-            <tr>
-                <td>Cours particuliers en mathématiques</td>
-                <td>25 €</td>
-                <td>Heure</td>
-            </tr>
-
-            <tr>
-                <td>Formation Excel, Python, statistiques</td>
-                <td>200 €</td>
-                <td>Jour</td>
-            </tr>
-
-            <tr>
-                <td>Analyse statistique / Data</td>
-                <td>300 €</td>
-                <td>Jour</td>
-            </tr>
-
-            <tr>
-                <td>Conseil statistiques / actuariat</td>
-                <td>300 €</td>
-                <td>Jour</td>
-            </tr>
-
-        </table>
+        <p class="intro">
+            Les tarifs ci-dessous constituent des tarifs de départ.
+            Le montant définitif peut être adapté en fonction de la
+            nature de la prestation, de sa durée, de sa complexité
+            et des livrables attendus.
+        </p>
 
 
-        <div class="launch">
+        <div class="tarifs">
 
-            <h2>Positionnement de lancement</h2>
+
+            <div class="tarif">
+
+                <h3>
+                    Cours particuliers en mathématiques
+                </h3>
+
+                <div class="type">
+                    Accompagnement individuel
+                </div>
+
+                <div class="montant">
+                    À partir de 25 €/heure
+                </div>
+
+                <p>
+                    Cours de mathématiques, remise à niveau,
+                    accompagnement scolaire et préparation aux examens.
+                </p>
+
+            </div>
+
+
+            <div class="tarif">
+
+                <h3>
+                    Formation outils numériques
+                </h3>
+
+                <div class="type">
+                    Excel · Python · Statistiques
+                </div>
+
+                <div class="montant">
+                    Sur devis
+                </div>
+
+                <p>
+                    Le tarif dépend notamment du programme,
+                    du nombre de participants, de la durée et
+                    du niveau de personnalisation de la formation.
+                </p>
+
+            </div>
+
+
+            <div class="tarif">
+
+                <h3>
+                    Analyse statistique & Data
+                </h3>
+
+                <div class="type">
+                    Analyse · Modélisation · Data
+                </div>
+
+                <div class="montant">
+                    À partir de 300 €/jour
+                </div>
+
+                <p>
+                    Prestations d'analyse, de préparation,
+                    de modélisation et d'interprétation de données.
+                </p>
+
+                <span class="launch">
+                    Tarif de lancement
+                </span>
+
+            </div>
+
+
+            <div class="tarif">
+
+                <h3>
+                    Conseil statistiques & actuariat
+                </h3>
+
+                <div class="type">
+                    Statistiques · Risques · Assurance · Actuariat
+                </div>
+
+                <div class="montant">
+                    À partir de 300 €/jour
+                </div>
+
+                <p>
+                    Missions statistiques et actuarielles,
+                    analyse de risques, tarification,
+                    provisionnement et études quantitatives.
+                </p>
+
+                <span class="launch">
+                    Tarif de lancement
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="grey">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Positionnement tarifaire
+        </h2>
+
+        <div class="positioning">
 
             <p>
-                Les tarifs des prestations professionnelles ont été
-                volontairement fixés à un niveau compétitif pour
-                faciliter l'entrée sur le marché et permettre
-                l'acquisition des premiers clients.
+                Les prestations d'analyse statistique, de Data et
+                de conseil actuariel sont proposées initialement
+                à partir de <strong>300 €/jour</strong>.
             </p>
 
             <p>
-                Cette stratégie vise notamment à permettre la
-                constitution progressive d'un portefeuille clients,
-                de références et de recommandations.
+                Ce positionnement correspond à une phase de lancement
+                visant à faciliter l'acquisition des premiers clients
+                et à développer progressivement un portefeuille
+                de missions.
             </p>
 
             <p>
-                Les tarifs pourront être réévalués progressivement
-                en fonction de l'expérience acquise, de la complexité
-                des missions et de la fidélisation de la clientèle.
+                Le tarif pourra évoluer selon la complexité de la
+                mission, le niveau d'expertise requis, la durée
+                d'intervention et les responsabilités associées.
             </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Établissement d'un devis
+        </h2>
+
+        <div class="positioning">
+
+            <p>
+                Pour les prestations nécessitant une analyse
+                approfondie du besoin, un devis peut être établi
+                avant le début de la mission.
+            </p>
+
+            <div class="conditions">
+
+                <p>
+                    Le devis peut notamment prendre en compte :
+                </p>
+
+                <ul>
+                    <li>le périmètre de la mission ;</li>
+                    <li>la quantité et la qualité des données disponibles ;</li>
+                    <li>la durée estimée de l'intervention ;</li>
+                    <li>la complexité technique du travail ;</li>
+                    <li>les livrables attendus ;</li>
+                    <li>les éventuelles demandes spécifiques du client.</li>
+                </ul>
+
+            </div>
 
         </div>
 
@@ -259,10 +443,18 @@
 
 <section class="contact">
 
-    <h2>GJ Analytics</h2>
+    <h2>
+        GJ Analytics
+    </h2>
 
     <p>
         Mathématiques · Statistiques · Data · Actuariat
+    </p>
+
+    <p>
+        <a href="mailto:gjanalytics.git@gmail.com">
+            gjanalytics.git@gmail.com
+        </a>
     </p>
 
 </section>
