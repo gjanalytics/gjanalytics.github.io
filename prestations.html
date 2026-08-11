@@ -1,0 +1,310 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prestations | GJ Analytics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f4f7fb;
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #526174;
+            font-size: 17px;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .services {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            border: 1px solid #e1e6ed;
+            border-radius: 8px;
+            background: #f8fafc;
+        }
+
+        .card h2 {
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #526174;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            color: #526174;
+        }
+
+        .price {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #0b1f3a;
+            font-size: 18px;
+        }
+
+        .contact {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #071426;
+            color: #b9c3d1;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            GJ Analytics
+        </div>
+
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="prestations.html">Prestations</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Nos prestations</h1>
+
+    <p>
+        GJ Analytics propose des prestations adaptées
+        aux particuliers, étudiants, entreprises et
+        organismes de formation.
+    </p>
+
+</section>
+
+
+<section>
+
+    <div class="services">
+
+        <div class="card">
+
+            <h2>Mathématiques</h2>
+
+            <p>
+                Accompagnement personnalisé en mathématiques
+                pour les élèves et étudiants.
+            </p>
+
+            <ul>
+                <li>Remise à niveau</li>
+                <li>Préparation aux examens</li>
+                <li>Préparation au baccalauréat</li>
+                <li>Accompagnement régulier</li>
+            </ul>
+
+            <div class="price">
+                25 €/heure
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Formation numérique</h2>
+
+            <p>
+                Formations courtes et pratiques destinées
+                aux particuliers et aux professionnels.
+            </p>
+
+            <ul>
+                <li>Excel</li>
+                <li>Python</li>
+                <li>Statistiques</li>
+                <li>Initiation à l'analyse de données</li>
+            </ul>
+
+            <div class="price">
+                200 €/jour
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Analyse statistique & Data</h2>
+
+            <p>
+                Analyse et traitement des données pour répondre
+                à des problématiques concrètes.
+            </p>
+
+            <ul>
+                <li>Nettoyage des données</li>
+                <li>Analyse statistique</li>
+                <li>Visualisation</li>
+                <li>Tableaux de bord</li>
+                <li>Automatisation de traitements</li>
+            </ul>
+
+            <div class="price">
+                300 €/jour
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Statistiques & Actuariat</h2>
+
+            <p>
+                Prestations quantitatives destinées notamment
+                aux secteurs de l'assurance et de la finance.
+            </p>
+
+            <ul>
+                <li>Études statistiques</li>
+                <li>Analyse de risques</li>
+                <li>Analyse de sinistralité</li>
+                <li>Modélisation quantitative</li>
+                <li>Assistance actuarielle</li>
+            </ul>
+
+            <div class="price">
+                300 €/jour
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>Une prestation adaptée à votre besoin</h2>
+
+    <p>
+        Contactez GJ Analytics pour présenter votre besoin
+        et définir le format de la prestation.
+    </p>
+
+</section>
+
+
+<footer>
+
+    © 2026 GJ Analytics — Tous droits réservés.
+
+</footer>
+
+</body>
+</html>
+```
